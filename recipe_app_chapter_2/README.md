@@ -1,4 +1,6 @@
-# Chapter 2
+# recipe_app_chapter_2
+
+A new Flutter project.
 
 ## Getting Started
 
