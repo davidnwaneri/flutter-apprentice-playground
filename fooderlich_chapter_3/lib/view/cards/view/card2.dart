@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooderlich_chapter_3/components/circle_image.dart';
 import 'package:fooderlich_chapter_3/models/explore_recipe.dart';
 import 'package:fooderlich_chapter_3/theme.dart';
 
@@ -11,7 +12,6 @@ class Card2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        padding: const EdgeInsets.all(16),
         constraints: const BoxConstraints.expand(width: 350, height: 450),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -113,26 +113,6 @@ class _FavouriteButtonState extends State<FavouriteButton> {
       iconSize: 30,
       color: Colors.red,
       icon: Icon(_isFavourite ? Icons.favorite : Icons.favorite_border),
-    );
-  }
-}
-
-class CircleImage extends StatelessWidget {
-  const CircleImage({Key? key, this.radius = 28, required this.imageProvider}) : super(key: key);
-
-  final double radius;
-  final ImageProvider imageProvider;
-
-  @override
-  Widget build(BuildContext context) {
-    return CircleAvatar(
-      backgroundColor: Colors.white,
-      radius: radius,
-      child: CircleAvatar(
-        backgroundColor: Colors.white,
-        radius: radius - 4,
-        backgroundImage: imageProvider,
-      ),
     );
   }
 }

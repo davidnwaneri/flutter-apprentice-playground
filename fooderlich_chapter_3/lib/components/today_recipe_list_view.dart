@@ -22,7 +22,7 @@ class TodayRecipeListView extends StatelessWidget {
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
               itemCount: recipes.length,
-              separatorBuilder: (context, index) => const SizedBox(width: 12),
+              separatorBuilder: (context, index) => const SizedBox(width: 14),
               itemBuilder: (context, index) {
                 final recipe = recipes[index];
                 if (recipe.cardType == RecipeCardType.card1) {

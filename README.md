@@ -1,5 +1,7 @@
 # Chapter 3, 4 & 5 inclusive
 
+<img src="assets/app.gif" alt="app" width="330"/>
+
 ## Getting Started
 
 A few resources to get you started if this is your first time with a Flutter project:

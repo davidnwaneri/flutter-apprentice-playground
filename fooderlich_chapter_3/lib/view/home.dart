@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fooderlich_chapter_3/view/explore_screen.dart';
+import 'package:fooderlich_chapter_3/view/recipes_screen.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -13,10 +14,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
   final List<Widget> _pages = [
-    ExploreScreen(),
-    Container(height: 400, color: Colors.blue),
+    const ExploreScreen(),
+    RecipesScreen(),
     Container(height: 400, color: Colors.orange),
-
   ];
 
   void _onItemTapped(int index) {
@@ -40,8 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
             label: 'Explore',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.card_giftcard),
-            label: 'Card 2',
+            icon: Icon(Icons.book),
+            label: 'Recipes',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.card_giftcard),
